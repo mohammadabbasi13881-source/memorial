@@ -463,15 +463,15 @@ justify-content:center;
 
 .header{
 
-height:70px;
+height:64px;
 
-padding:0 18px;
+padding:0 15px;
 
 }
 
 .logo{
 
-font-size:26px;
+font-size:22px;
 
 }
 
@@ -489,9 +489,9 @@ display:none;
 
 .hero{
 
-padding-top:95px;
+padding-top:85px;
 
-padding-bottom:40px;
+padding-bottom:30px;
 
 }
 
