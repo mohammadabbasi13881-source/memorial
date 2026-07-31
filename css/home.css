@@ -1,4 +1,7 @@
-/* ---------- Reset ---------- */
+/* ======================================================
+   Memorial Website - Home.css
+   Version 1.0
+======================================================*/
 
 *{
     margin:0;
@@ -6,20 +9,115 @@
     box-sizing:border-box;
 }
 
-body{
-    background:#0b0b0b;
-    color:#fff;
-    font-family:Tahoma,sans-serif;
-    overflow-x:hidden;
+:root{
+
+    --gold:#d4af37;
+    --gold-light:#f5d36d;
+    --black:#060606;
+    --gray:#cfcfcf;
+    --white:#ffffff;
+
 }
 
-/* ---------- Hero ---------- */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    direction:rtl;
+
+    font-family:Tahoma,sans-serif;
+
+    color:var(--white);
+
+    background:
+    linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.88)),
+    url("../images/marble.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    overflow-x:hidden;
+
+}
+
+/*================ Header ================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    right:0;
+
+    width:100%;
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(212,175,55,.2);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    color:var(--gold);
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    font-size:18px;
+
+}
+
+nav a:hover{
+
+    color:var(--gold);
+
+}
+
+/*================ Hero ================*/
 
 .hero{
 
     min-height:100vh;
-
-    background:url("../images/marble.jpg") center center/cover no-repeat;
 
     display:flex;
 
@@ -27,19 +125,19 @@ body{
 
     align-items:center;
 
+    padding-top:100px;
+
     position:relative;
 
 }
 
-.hero::before{
-
-    content:"";
+.overlay{
 
     position:absolute;
 
     inset:0;
 
-    background:rgba(0,0,0,.72);
+    background:rgba(0,0,0,.35);
 
 }
 
@@ -49,65 +147,93 @@ body{
 
     z-index:2;
 
+    width:92%;
+
+    max-width:1200px;
+
     text-align:center;
-
-    width:90%;
-
-    max-width:900px;
 
 }
 
-/* ---------- Portrait ---------- */
+/*================ Portrait ================*/
 
 .profile{
 
-    width:300px;
+    width:340px;
 
     border-radius:50%;
 
-    border:6px solid #d4af37;
+    border:6px solid var(--gold);
 
-    box-shadow:0 0 60px rgba(212,175,55,.55);
+    padding:8px;
 
-    margin-bottom:35px;
+    background:#111;
+
+    box-shadow:
+    0 0 30px rgba(212,175,55,.5),
+    0 0 80px rgba(212,175,55,.18);
+
+    transition:.5s;
 
 }
 
-/* ---------- Typography ---------- */
+.profile:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+    0 0 50px rgba(212,175,55,.7),
+    0 0 120px rgba(212,175,55,.25);
+
+}
+
+/* هاله طلایی */
+
+.profile::after{
+    display:none;
+}
+
+/*================ Typography ================*/
 
 h1{
 
-    font-size:60px;
+    margin-top:35px;
 
-    color:#d4af37;
+    font-size:72px;
 
-    margin-bottom:15px;
+    color:var(--gold);
+
+    font-weight:bold;
 
 }
 
 .date{
 
-    font-size:22px;
+    margin-top:18px;
 
-    color:#dddddd;
+    color:#ececec;
 
-    margin-bottom:20px;
+    font-size:26px;
+
+    letter-spacing:2px;
 
 }
 
 .quote{
 
-    font-size:24px;
+    margin:45px auto;
 
-    line-height:2;
+    max-width:900px;
 
-    color:#f5f5f5;
+    line-height:2.2;
 
-    margin-bottom:40px;
+    font-size:27px;
+
+    color:#f7f7f7;
 
 }
 
-/* ---------- Buttons ---------- */
+/*================ Buttons ================*/
 
 .buttons{
 
@@ -117,55 +243,95 @@ h1{
 
     flex-wrap:wrap;
 
-    gap:15px;
+    gap:20px;
 
 }
 
 .buttons a{
 
-    padding:15px 28px;
+    min-width:180px;
 
-    border:1px solid #d4af37;
+    padding:18px 35px;
 
-    color:#d4af37;
+    border:2px solid var(--gold);
+
+    border-radius:50px;
+
+    color:var(--gold);
 
     text-decoration:none;
 
-    border-radius:40px;
+    font-size:19px;
 
-    transition:.3s;
+    transition:.35s;
+
+    background:rgba(255,255,255,.02);
 
 }
 
 .buttons a:hover{
 
-    background:#d4af37;
+    background:var(--gold);
 
     color:#000;
 
-    transform:translateY(-3px);
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(212,175,55,.4);
 
 }
 
-/* ---------- Mobile ---------- */
+/*================ Mobile ================*/
 
-@media(max-width:768px){
+@media(max-width:900px){
+
+.header{
+
+padding:0 20px;
+
+}
+
+nav{
+
+display:none;
+
+}
 
 .profile{
 
-width:220px;
+width:230px;
 
 }
 
 h1{
 
-font-size:38px;
+font-size:45px;
+
+}
+
+.date{
+
+font-size:18px;
 
 }
 
 .quote{
 
-font-size:19px;
+font-size:20px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.buttons a{
+
+width:260px;
 
 }
 
