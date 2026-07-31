@@ -882,3 +882,17 @@ color:#b9b9b9;
 font-size:15px;
 
 }
+html,
+body{
+
+width:100%;
+
+overflow-x:hidden;
+
+}
+
+.header{
+
+max-width:100vw;
+
+}
