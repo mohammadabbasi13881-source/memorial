@@ -157,40 +157,99 @@ nav a:hover{
 
 /*================ Portrait ================*/
 
+/*================ Hero ================*/
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:120px 60px 60px;
+
+gap:70px;
+
+position:relative;
+
+max-width:1400px;
+
+margin:auto;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.25);
+
+}
+
+.hero-left,
+.hero-right{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.hero-left{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-right{
+
+flex:1;
+
+text-align:right;
+
+}
+
 .profile{
 
-    width:340px;
+width:100%;
 
-    border-radius:50%;
+max-width:520px;
 
-    border:6px solid var(--gold);
+height:680px;
 
-    padding:8px;
+object-fit:cover;
 
-    background:#111;
+border-radius:18px;
 
-    box-shadow:
-    0 0 30px rgba(212,175,55,.5),
-    0 0 80px rgba(212,175,55,.18);
+border:6px solid var(--gold);
 
-    transition:.5s;
+padding:0;
+
+background:#111;
+
+box-shadow:
+0 0 45px rgba(212,175,55,.45);
+
+transition:.4s;
 
 }
 
 .profile:hover{
 
-    transform:scale(1.03);
+transform:scale(1.02);
 
-    box-shadow:
-    0 0 50px rgba(212,175,55,.7),
-    0 0 120px rgba(212,175,55,.25);
+box-shadow:
+0 0 70px rgba(212,175,55,.6);
 
-}
-
-/* هاله طلایی */
-
-.profile::after{
-    display:none;
 }
 
 /*================ Typography ================*/
