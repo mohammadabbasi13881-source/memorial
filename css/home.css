@@ -256,39 +256,36 @@ box-shadow:
 
 h1{
 
-    margin-top:35px;
+font-size:72px;
 
-    font-size:72px;
+color:var(--gold);
 
-    color:var(--gold);
+margin-bottom:25px;
 
-    font-weight:bold;
+margin-top:0;
 
 }
 
-.date{
 
-    margin-top:18px;
+    .date{
 
-    color:#ececec;
+font-size:28px;
 
-    font-size:26px;
+margin-bottom:30px;
 
-    letter-spacing:2px;
+color:#eee;
 
 }
 
 .quote{
 
-    margin:45px auto;
+font-size:28px;
 
-    max-width:900px;
+line-height:2.1;
 
-    line-height:2.2;
+margin-bottom:45px;
 
-    font-size:27px;
-
-    color:#f7f7f7;
+max-width:700px;
 
 }
 
