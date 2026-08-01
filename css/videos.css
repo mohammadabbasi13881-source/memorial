@@ -127,67 +127,68 @@ padding-bottom:80px;
 
 }
 
-/*================ Card ================*/
+.videos{
 
-.video-card{
+width:90%;
+
+max-width:900px;
+
+margin:auto;
+
+padding-bottom:80px;
+
+}
+
+
+.video-box{
 
 background:#111;
 
-border:2px solid #d4af37;
+border:3px solid var(--gold);
 
-border-radius:18px;
+border-radius:20px;
 
 overflow:hidden;
 
-transition:.35s;
-
-box-shadow:0 0 18px rgba(212,175,55,.15);
-
-}
-
-.video-card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 0 35px rgba(212,175,55,.35);
+box-shadow:
+0 0 30px rgba(212,175,55,.35);
 
 }
 
-/*================ Video ================*/
 
-.video-card video{
+.video-box video{
 
 width:100%;
 
 display:block;
 
-background:black;
+background:#000;
 
 }
 
-.video-info{
 
-padding:20px;
+.video-box h2{
 
 text-align:center;
 
-}
-
-.video-info h3{
-
 color:#d4af37;
 
-font-size:24px;
+font-size:30px;
 
-margin-bottom:12px;
+margin:25px 10px 15px;
 
 }
 
-.video-info p{
+
+.video-box p{
+
+text-align:center;
 
 color:#ddd;
 
-line-height:1.8;
+font-size:20px;
+
+padding-bottom:25px;
 
 }
 
