@@ -47,7 +47,15 @@
 
 setTimeout(function(){
 
+document.body.style.opacity="0";
+
+document.body.style.transition="opacity .8s";
+
+setTimeout(function(){
+
 window.location.href="home.html";
+
+},800);
 
 },2500);
 
