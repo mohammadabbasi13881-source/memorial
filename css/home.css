@@ -161,6 +161,8 @@ nav a:hover{
 
 .content{
 
+display:grid;
+
 width:100%;
 
 max-width:100%;
@@ -169,9 +171,11 @@ padding:0 15px;
 
 margin:0 auto;
 
-grid-template-columns:1fr;
+grid-template-columns:430px 1fr;
 
-gap:35px;
+gap:80px;
+
+align-items:center;
 
 }
 /*====================================================
@@ -496,8 +500,6 @@ padding-bottom:30px;
 }
 
 .content{
-
-width:94%;
 
 grid-template-columns:1fr;
 
