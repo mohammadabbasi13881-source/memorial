@@ -161,17 +161,17 @@ nav a:hover{
 
 .content{
 
-    width:100%;
+width:100%;
 
-    max-width:1350px;
+max-width:100%;
 
-    display:grid;
+padding:0 15px;
 
-    grid-template-columns:430px 1fr;
+margin:0 auto;
 
-    gap:80px;
+grid-template-columns:1fr;
 
-    align-items:center;
+gap:35px;
 
 }
 /*====================================================
@@ -651,4 +651,8 @@ background:var(--gold);
 
 color:#000;
 
+}
+
+*{
+outline:1px solid red;
 }
