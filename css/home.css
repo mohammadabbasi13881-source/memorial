@@ -774,3 +774,55 @@ background:var(--gold);
 color:#000;
 
 }
+
+.hero-image{
+
+animation:photoFade 1.5s ease;
+
+}
+
+.hero-info{
+
+animation:textFade 2s ease;
+
+}
+
+@keyframes photoFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@keyframes textFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
