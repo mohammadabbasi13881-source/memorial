@@ -826,3 +826,38 @@ transform:none;
 }
 
 }
+/*================ Signature ================*/
+
+.dedication{
+
+padding:45px 20px 50px;
+
+text-align:center;
+
+}
+
+.line{
+
+width:160px;
+
+height:1px;
+
+margin:0 auto 22px;
+
+background:rgba(212,175,55,.35);
+
+}
+
+.signature{
+
+font-size:13px;
+
+color:rgba(255,255,255,.55);
+
+letter-spacing:.5px;
+
+line-height:2;
+
+font-style:italic;
+
+}
