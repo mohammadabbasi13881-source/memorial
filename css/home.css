@@ -37,8 +37,8 @@ body{
 
     background:
     linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.90)),
-    url("../images/marble.jpg");
-
+    url("../images/marble.png");
+    
     background-size:cover;
 
     background-position:center;
